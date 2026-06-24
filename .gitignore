@@ -1,0 +1,66 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw data (too large for git — users must download separately)
+data/raw/BACI_HS92_V202601.zip
+data/raw/BACI_HS92_V202601.baci_partial.parquet
+data/raw/GEDEvent_v26_0_4.csv
+data/raw/dist_cepii.xls
+data/raw/auxiliary/
+data/raw/exiobase/
+
+# Processed data (reproducible via data_pipeline.py)
+data/processed/multiplex_edges.csv
+data/processed/node_features.csv
+data/processed/node_features.parquet
+data/processed/pipeline_manifest.json
+data/processed/food/
+data/processed/energy/
+data/processed/semiconductors/
+data/processed/consumer_goods/
+data/processed/conflict/
+data/processed/macro/
+
+# Model checkpoints (too large for git; reproducible via multi_seed_eval.py)
+results/multi_seed_models/*.pt
+results/model_checkpoint.pt
+
+# Log files (transient execution logs)
+logs/
+
+# Generated manuscripts (reproducible via generate_*.py scripts)
+output/
+
+# Country mapping (small, but derived from raw data)
+data/raw/country_mapping.parquet
